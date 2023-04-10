@@ -1,16 +1,20 @@
-# danggnn
+# 한밭대학교 중고 거래
 
-A new Flutter project...
+- 한밭대 재학생들을 위한 온라인 거래 장터
+- ㅁㄴㅇㄹ
+- ㅁㄴㅇㄹ
+# 프로젝트 목표
+- 게시글 목록, 작성 & 이미지 업로드 & 채팅 시스템
+- ㅁㄴㅇㄹ
+- ㅁㄴㅇㄹ
 
-## Getting Started
+# 사용 기술
+- Flutter 2.0
+  - image picker
+  - kakaologin
+- Firebase
 
-This project is a starting point for a Flutter application.
+# 화면
 
-A few resources to get you started if this is your first Flutter project:
+https://user-images.githubusercontent.com/60515923/230872167-bc43cade-c9a6-4472-9b6c-804c5759c273.png
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
