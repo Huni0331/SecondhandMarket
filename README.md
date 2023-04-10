@@ -16,5 +16,5 @@
 
 # 화면
 
-https://user-images.githubusercontent.com/60515923/230872167-bc43cade-c9a6-4472-9b6c-804c5759c273.png
-
+![게시글리스트](https://user-images.githubusercontent.com/60515923/230872167-bc43cade-c9a6-4472-9b6c-804c5759c273.png) ![게시글디테일](https://user-images.githubusercontent.com/60515923/230872591-2eb4a5f4-80a4-45ea-acb8-a292aa7ea30d.png)
+![채팅](https://user-images.githubusercontent.com/60515923/230872603-10f22067-edb3-485c-b420-ab5e04c8a3c3.png)
