@@ -274,7 +274,7 @@ class _DetailContentViewState extends State<DetailContentView>
                           ? GestureDetector(
                               onTap: () {
                                 Get.to(ChatScreen(),
-                                arguments: [widget.data["kakaoNumber"], getKakaoNumber]);
+                                arguments: [widget.data["kakaoNumber"], getKakaoNumber, widget.data["title"]]);
                               },
                               child: Container(
                                 padding: const EdgeInsets.symmetric(

@@ -14,12 +14,13 @@ class _ChatScreenState extends State<ChatScreen> {
 
   String myName = Get.arguments[1].toString();
   String yourName = Get.arguments[0].toString();
+  String contentTitle = Get.arguments[2];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('한밭대학교 중고 거래'),
+        title: Text(contentTitle),
       ),
       body: Container(
         child: Column(

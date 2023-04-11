@@ -1,10 +1,11 @@
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:danggnn/page/write.dart';
 import 'package:danggnn/repository/contents_repository.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
+import '../chat/chat_list.dart';
 import '../utils/Contents.dart';
 import 'contents_card.dart';
 
@@ -19,6 +20,8 @@ class _HomeState extends State<Home> {
   //for 게시글
   List<Object> _historyList = [];
 
+  late int _currentPageIndex;
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -32,7 +35,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
-    currnetLocation = "ara";
+    _currentPageIndex = 0;
   }
 
   Future getContentsList() async {
@@ -55,8 +58,7 @@ class _HomeState extends State<Home> {
       actions: [
         IconButton(
           visualDensity: VisualDensity(horizontal: -4.0, vertical: -4.0),
-          onPressed: () {
-          },
+          onPressed: () {},
           icon: Icon(Icons.search),
           color: Colors.white,
         ),
@@ -99,12 +101,49 @@ class _HomeState extends State<Home> {
         });
   }
 
+  BottomNavigationBarItem _bottomNavigationBarItem(String iconName,
+      String label) {
+    return BottomNavigationBarItem(
+      activeIcon: SvgPicture.asset("assets/svg/${iconName}_on.svg", width: 26,),
+        icon: SvgPicture.asset("assets/svg/${iconName}_off.svg", width: 26,),
+      label: label
+    );
+  }
+
+  Widget _bottomNavigationBarWidget() {
+    return BottomNavigationBar(
+      type:
+      BottomNavigationBarType.fixed,
+      selectedItemColor: Colors.black,
+      selectedFontSize: 14,
+      onTap: (int index){
+        setState(() {
+          _currentPageIndex = index;
+        });
+        switch (index) {
+          case 0:
+            Get.off(Home(), arguments: getKakaoNumber,);
+            break;
+          case 1:
+            Get.off(ChatList(), arguments: getKakaoNumber,);
+            break;
+        }
+      },
+        currentIndex: _currentPageIndex,
+        items: [
+          _bottomNavigationBarItem("home", "Home"),
+          _bottomNavigationBarItem("chat", "Chat"),
+        ]
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _appbarWidget(),
       body: _bodyWidget(),
       floatingActionButton: _floatingActionBar(),
+      bottomNavigationBar: _bottomNavigationBarWidget(),
     );
   }
 }

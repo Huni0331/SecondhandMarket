@@ -14,12 +14,13 @@
 - Flutter 2.0
 - Flutter Packages
   - image picker 0.8.4
-  - kakao_flutter_sdk 1.1.1
+  - kakao_flutter_sdk 1.1.1s
   - getx 4.5.2
 - Firebase
 
 # 화면
 
-![책있는 목록](https://user-images.githubusercontent.com/60515923/231054230-4c37cc02-6941-49bf-9a21-78039de3194b.png) ![책 게시글 디테일](https://user-images.githubusercontent.com/60515923/231054222-4a3eea15-20af-47af-999f-28d9951071dc.png) 
+![게시글하단바추가](https://user-images.githubusercontent.com/60515923/231111401-0a67dca7-c349-4488-a3f0-8c0ac8296871.png) ![게시글작성](https://user-images.githubusercontent.com/60515923/230873156-3fb4b703-27c1-4972-a943-afffb3c73483.png)
+![책 게시글 디테일](https://user-images.githubusercontent.com/60515923/231054222-4a3eea15-20af-47af-999f-28d9951071dc.png) 
 ![게시글디테일](https://user-images.githubusercontent.com/60515923/230872591-2eb4a5f4-80a4-45ea-acb8-a292aa7ea30d.png)
-![채팅](https://user-images.githubusercontent.com/60515923/230872603-10f22067-edb3-485c-b420-ab5e04c8a3c3.png) ![게시글작성](https://user-images.githubusercontent.com/60515923/230873156-3fb4b703-27c1-4972-a943-afffb3c73483.png)
+![채팅](https://user-images.githubusercontent.com/60515923/230872603-10f22067-edb3-485c-b420-ab5e04c8a3c3.png) ![채팅창](https://user-images.githubusercontent.com/60515923/231111470-bd97cb15-0b96-4202-8138-39c9138c1f84.png)
